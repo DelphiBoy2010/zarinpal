@@ -1,0 +1,143 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 480
+  ClientWidth = 375
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 375.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 26.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Zarinpal payment'
+    TabOrder = 0
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 291.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object btnPay: TButton
+      Align = Client
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Pay'
+      OnClick = btnPayClick
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Position.Y = 41.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object edtMerchantID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = '8daafb82-3a89-11e8-b0df-005056a205be'
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1705#1583' '#1605#1585#1670#1606#1578
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 384.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 96.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 371.000000000000000000
+    Viewport.Height = 92.000000000000000000
+  end
+  object Layout3: TLayout
+    Align = Top
+    Position.Y = 241.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object edtEmail: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = 'komlife@gmail.com'
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1605#1608#1576#1575#1740#1604
+    end
+  end
+  object Layout4: TLayout
+    Align = Top
+    Position.Y = 191.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object edtCellphone: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = '09354122'
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1605#1608#1576#1575#1740#1604
+    end
+  end
+  object Layout5: TLayout
+    Align = Top
+    Position.Y = 91.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object edtAmount: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = '1000'
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1605#1576#1604#1594
+    end
+  end
+  object Layout6: TLayout
+    Align = Top
+    Position.Y = 141.000000000000000000
+    Size.Width = 375.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object edtDescription: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = #1578#1587#1578' '#1582#1585#1740#1583
+      Size.Width = 375.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1578#1608#1590#1740#1581#1575#1578#1578' '#1582#1585#1740#1583' '
+    end
+  end
+end
